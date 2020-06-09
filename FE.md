@@ -12,6 +12,7 @@ data = data.loc[data.isnull().mean(axis=1) < threshold]
 
 #Filling all missing values with 0\
 data = data.fillna(0)\
+
 #Filling missing values with medians of the columns\
 data = data.fillna(data.median())\
 
